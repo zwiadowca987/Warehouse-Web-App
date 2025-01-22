@@ -2,6 +2,8 @@
 ## Opis Projektu
 Niniejsza wersja projektu powstała w ramach przedmiotu "Aplikacje Internetowe". Zawiera ona interfejs użytkownika stworzony poprzez użycie framework'a React oraz API powstałego przy pomocy ASP.NET Core. Frontend zawiera stronę główną, kategorie oferowanych produktów, przykładowy opis firmy oraz dane kontaktowe wraz z formularzem kontaktowym obsługiwanym przez API, zapisujące dane z formularza w bazie danych.
 
+Ta wersja projektu znajduje się w repozytorium na platformie Github pod adresem https://github.com/zwiadowca987/Warehouse-Web-App/tree/AplikacjeInternetowe.
+
 ## Technologie użyte w projekcie
 Projekt został stworzony przy użyciu następujących technologii:
 - **HTML**: Struktura strony internetowej
@@ -67,4 +69,5 @@ API będzie dostępne pod adresem https://localhost:5001 lub http://localhost:50
 
 ## Dodatkowe informacje
 Wszystkie użyte w projekcie obrazki zostały wygenerowane przez sztuczną inteligencję.
+
 https://openart.ai/home
