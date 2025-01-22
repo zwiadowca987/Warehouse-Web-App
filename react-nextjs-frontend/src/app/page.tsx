@@ -1,95 +1,42 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import openartImage1 from "../../public/app/openartImage1.jpg";
+import openartImage2 from "../../public/app/openartImage2.jpg";
+import openartImage3 from "../../public/app/openartImage3.jpg";
 
-export default function Home() {
+export default function MyApp() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      <div className={"container"}>
+        <div className={"text-center"}>
+          <h1 className={"display-1"}>Dlaczego my?</h1>
+          <h2 className={"display-3"}>Poznaj nasze atuty i wybierz najlepsze rozwiązania hydrauliczne.</h2>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className={"row m-5"}>
+          <div className={"col card m-3 p-3"}>
+            <Image className={"card-img-top img-thumbnail"} alt={"Image1"} src={openartImage1}/>
+            <div className={"card-body"}>
+              <h5 className={"card-title"}>Szeroki asortyment</h5>
+              <p className={"card-text"}>Ponad 10 tysięcy produktów – od rur i złączek po nowoczesne systemy pomp.</p>
+              <Link className={"btn btn-primary"} href={"/shop"}>Sklep</Link>
+            </div>
+          </div>
+          <div className={"col card m-3 p-3"}>
+            <Image className={"card-img-top img-thumbnail"} alt={"Image2"} src={openartImage2}/>
+            <div className={"card-body"}>
+              <h5 className={"card-title"}>Wysoka jakość</h5>
+              <p className={"card-text"}>Współpracujemy tylko z renomowanymi producentami, gwarantując niezawodność.</p>
+              <Link className={"btn btn-primary"} href={"/about"}>O Firmie</Link>
+            </div>
+          </div>
+          <div className={"col card m-3 p-3"}>
+            <Image className={"card-img-top img-thumbnail"} alt={"Image3"} src={openartImage3}/>
+            <div className={"card-body"}>
+              <h5 className={"card-title"}>Szybka dostawa</h5>
+              <p className={"card-text"}>Ekspresowa realizacja zamówień – dostawa w na terenie całego kraju.</p>
+              <Link className={"btn btn-primary"} href={"/contact"}>Kontakt</Link>
+            </div>
+          </div>
+        </div>
+      </div>
   );
 }
